@@ -50,7 +50,7 @@ object pepon {
 	}
 		
 	method comer(comida) {
-		energia += energia + comida.energiaQueAporta() / 2
+		energia += comida.energiaQueAporta() / 2
 	}
 		
 	method volar(distancia) {
@@ -74,3 +74,14 @@ object roque {
 	}
 }
 
+// 
+// self.error("...")
+// Receta excepción
+// method name(){
+// 	self.validar...(...)
+//  <lógica de negocio>
+// }
+// assert.equals 
+// assert.that
+// assert.notThat
+// 
