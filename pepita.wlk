@@ -84,4 +84,4 @@ object roque {
 // assert.equals 
 // assert.that
 // assert.notThat
-// 
+// assert.throwsExceptions({loquefalla})
