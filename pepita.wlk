@@ -6,7 +6,18 @@ object pepita {
 	}
 	
 	method volar(distancia) {
-		energia = energia - 10 - distancia
+		if (! self.puedeVolar(distancia)){
+			self.error("sin nafta")
+		 }	
+		 energia = energia - 10 - 2*distancia
+	}
+
+	method puedeVolar(distancia){
+		return energia >= self.energiaQueSeGasta(distancia)
+	}
+
+	method energiaQueSeGasta(distancia) {
+		return 10 + 2*distancia
 	}
 		
 	method energia() {

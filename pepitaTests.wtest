@@ -11,4 +11,9 @@ describe "Pepita, Pepon y Roque"{
         pepon.comer(alpiste)
         assert.equals(40, pepon.energia())
     }
+
+    test "Pepita sin energia para volar"{
+        //assert.thro wsExceptions({pepita.volar(91)})
+        assert.throwsException({pepita.volar(91)})
+    }
 }
